@@ -1,6 +1,5 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren/
-#
 
 from tkinter import Label, Tk
 from time import   strftime
@@ -17,7 +16,6 @@ ventana.columnconfigure(0, weight=1)
 ventana.rowconfigure(1, weight=1)
 ventana.columnconfigure(0, weight=1)
 ventana.rowconfigure(2, weight=1)
-
 
 def obtener_tiempo():	
 	hora =  strftime('%H:%M:%S')
@@ -40,13 +38,11 @@ def obtener_tiempo():
 		dia = 'Sábado'
 	elif dia =='Sunday':
 		dia = 'Domingo'
-
 	texto_hora.config(text=hora, font = ('Radioland', t))
 	texto_dia.config(text=dia )
 	texto_fecha.config(text=fecha)
 	
 	texto_hora.after(1000, obtener_tiempo)
-
 
 texto_hora = Label(ventana,  fg = 'aqua', bg='black')
 texto_hora.grid(row=0,sticky="nsew", ipadx=5, ipady=20)
@@ -56,4 +52,3 @@ texto_fecha = Label(ventana,  fg = 'green2',  bg='gray3', font = ('Comic Sans MS
 texto_fecha.grid(row=2,sticky="nsew")
 obtener_tiempo()
 ventana.mainloop() 
-
