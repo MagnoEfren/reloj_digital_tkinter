@@ -2,7 +2,6 @@
 # Youtube: https://www.youtube.com/c/MagnoEfren/
 from tkinter import Label, Tk
 from time import   strftime
-
 ventana = Tk () 
 ventana.title('Reloj Digital')
 ventana.config(bg='white')
