@@ -20,7 +20,6 @@ def obtener_tiempo():
 	fecha = strftime('%d - %m - %y')
 	x = texto_hora.winfo_height()
 	t = int((x-5)*0.32)
-	
 	if dia =='Monday':
 		dia = 'Lunes'
 	elif dia =='Tuesday':
