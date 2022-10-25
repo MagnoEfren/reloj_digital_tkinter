@@ -1,5 +1,6 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren/
+
 from tkinter import Label, Tk
 from time import   strftime
 ventana = Tk () 
@@ -7,12 +8,11 @@ ventana.title('Reloj Digital')
 ventana.config(bg='white')
 ventana.geometry('350x250+10+10')
 ventana.minsize(width=250, height=200)
+
 ventana.columnconfigure(0, weight=15)
 ventana.rowconfigure(0, weight=15)
-ventana.columnconfigure(0, weight=1)
-ventana.rowconfigure(1, weight=1)
-ventana.columnconfigure(0, weight=1)
-ventana.rowconfigure(2, weight=1)
+ventana.columnconfigure([1,2], weight=1)
+ventana.rowconfigure([1,2], weight=1)
 
 def obtener_tiempo():	
 	hora =  strftime('%H:%M:%S')
