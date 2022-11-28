@@ -1,6 +1,5 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren/
-
 from tkinter import Label, Tk
 from time import   strftime
 ventana = Tk () 
