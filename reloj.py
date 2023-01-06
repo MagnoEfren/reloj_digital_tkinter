@@ -7,7 +7,6 @@ ventana.title('Reloj Digital')
 ventana.config(bg='white')
 ventana.geometry('350x250+10+10')
 ventana.minsize(width=250, height=200)
-
 ventana.columnconfigure(0, weight=15)
 ventana.rowconfigure(0, weight=15)
 ventana.columnconfigure([1,2], weight=1)
@@ -35,8 +34,7 @@ def obtener_tiempo():
 		dia = 'Domingo'
 	texto_hora.config(text=hora, font = ('Radioland', t))
 	texto_dia.config(text=dia )
-	texto_fecha.config(text=fecha)
-	
+	texto_fecha.config(text=fecha)	
 	texto_hora.after(1000, obtener_tiempo)
 
 texto_hora = Label(ventana,  fg = 'aqua', bg='black')
